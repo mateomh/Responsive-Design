@@ -83,6 +83,24 @@ a {
   margin: 0 0 0 -108px;
 }
 
+@media screen and (max-width: 700px) {
+  #top-nav{
+    display: none;
+    top: -20px;
+  }
+
+  #fixed-nav {
+    top: 0;
+  }
+  #fixed-nav ul {
+    display: none;
+  }
+
+  #logo {
+    margin: 0;
+  }
+}
+
 #logo img {
   margin: 0 auto;
 }
@@ -117,33 +135,41 @@ a {
     "main main sub1"
     "main main sub2";
   gap: 10px;
-  background: gold;
-  margin: 0 auto;
+  margin: 4% auto;
+  background-color: orangered;
 }
 .large-art {
-  border: 1px solid hotpink;
+  background-image: url();
   height: fit-content;
-  background: red;
   grid-area: main;
   height: 100%;
+  padding-top: 50%;
 }
 
 .small-art-1 {
-  background: blue;
+  background-image: url();
   height: fit-content;
   grid-area: sub1;
   height: 100%;
   width: 100%;
+  padding-top: 30%;
 }
 
 .small-art-2 {
+  background-image: url();
   height: fit-content;
-  background: blueviolet;
   grid-area: sub2;
   height: 100%;
+  padding-top: 30%;
 }
 
+
+
 /* ------------------------- Latest News --------------------------- */
+
+#latest-news {
+  margin: 3% auto;
+}
 
 .section-title {
   display: inline-block;
@@ -157,8 +183,7 @@ a {
   margin: 0 auto;
   grid-template-columns: repeat(auto-fill,200px);
   grid-gap: 30px;
-  background-color: cornflowerblue;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .article-container{
@@ -166,8 +191,6 @@ a {
   height: fit-content;
   margin: 0;
   padding: 0;
-  border: 1px solid magenta;
-  background-color: grey;
 }
 
 .article-container h2 {
@@ -180,18 +203,56 @@ a {
 
 .article-image {
   float: none;
-  background-color: crimson;
   display: block;
   height: 30%;
   width: 90%;
   margin: 2%;
 }
 
+@media only screen and (max-width: 700px) {
+  /* --------------- Main Articles ----------------*/
+
+  #main-articles {
+    grid-template-areas: 
+      "main main main"
+      "sub1 sub1 sub1"
+      "sub2 sub2 sub2";
+  }
+
+  /* --------------- Latest News -------------------*/
+
+  .section-title {
+    margin:0;
+  }
+
+  .grid-container {
+    width: 100%;
+    padding: 1%;
+    justify-content: start;
+  }
+
+  .article-container {
+    width: 150%;
+    padding: 5% 2%;
+    margin-left: 0.5em;
+  }
+
+  .article-image {
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+
+  h2,p {
+    font-size: 0.4rem;
+  }
+}
+
 /* ------------------------- Funding Articles -----------------------*/
 
-.funding-container {
+#funding-container {
   width: 75%;
-  margin: 0 auto;
+  margin: 3% auto;
 }
 
 .funding-header {
@@ -252,18 +313,16 @@ a {
 
 /* ------------------------ Article Categories ---------------------*/
 
-.article-categories {
+#article-categories {
   width: 75%;
-  background-color: lightgreen;
-  margin: 0 auto;
+  margin: 3% auto;
   justify-content: space-between;
 }
 
 .category-container {
   width: 300px;
   height: fit-content;
-  background-color: lightslategray;
-  margin-top: 1%;
+  margin: 1% 0 3% 0;
 }
 
 .category-title {
@@ -310,6 +369,11 @@ a {
 .other-articles li {
   margin: 0;
   padding: 5% 0;
+  color: black;
+}
+
+.other-articles a{
+  color: black;
 }
 
 .other-articles i{
@@ -368,61 +432,11 @@ a {
 }
 
 /* ------------------------- Media Queries ------------------------- */
-
-@media only screen and (max-width: 700px) {
-  /* --------------- Main Articles ----------------*/
-
-  #main-articles {
-    grid-template-areas: 
-      "main main main"
-      "sub1 sub1 sub1"
-      "sub2 sub2 sub2";
-  }
-
-  /* --------------- Latest News -------------------*/
-
-  .section-title {
-    margin:0;
-  }
-
-  .grid-container {
-    width: 100%;
-    padding: 1%;
-    justify-content: start;
-  }
-
-  .article-container {
-    width: 150%;
-    padding: 5% 2%;
-    margin-left: 0.5em;
-  }
-
-  .article-image {
-    width: 20%;
-    height: 100%;
-    float: left;
-  }
-
-  h2,p {
-    font-size: 0.4rem;
-  }
-}
-
-
-@media screen and (max-width: 700px){
-  #top-nav{
-    display: none;
-    top: -20px;
-  }
-
-  #fixed-nav {
-    top: 0;
-  }
-  #fixed-nav ul {
-    display: none;
-  }
-
-  #logo {
-    margin: 0;
+@media screen and (max-width: 700px) {
+  .handy-btn {
+    border-radius: 0%;
+    padding: 2.5% 0 0 3%;
+    bottom: 5px;
+    right: 5px;
   }
 }
