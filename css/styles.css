@@ -22,6 +22,11 @@ nav ul li {
   display: inline;
 }
 
+main {
+  position: relative;
+  top: 80px;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -95,7 +100,63 @@ a {
   margin: 2% 5px 0 0;
 }
 
-/* ------------------------- Media Queries -------------------------*/
+/* ------------------------- Latest News --------------------------- */
+
+.grid-container{
+  display: grid;
+  width: 75%;
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fill,200px);
+  grid-gap: 30px;
+  background-color: cornflowerblue;
+  justify-content: center;
+}
+
+.article-container{
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  border: 1px solid magenta;
+  background-color: grey;
+}
+
+.article-container h2 {
+  padding: 0 2%;
+}
+
+.article-container p {
+  padding: 2%;
+}
+
+.article-image {
+  float: none;
+  background-color: crimson;
+  display: block;
+  height: 30%;
+  width: 90%;
+  margin: 2%;
+}
+
+/* ------------------------- Media Queries ------------------------- */
+
+@media only screen and (max-width: 700px) {
+  .grid-container {
+    width: 100%;
+    padding: 1%;
+  }
+
+  .article-image {
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+
+  h2,p {
+    font-size: 0.4rem;
+  }
+}
+
 
 @media screen and (max-width: 700px){
   #top-nav{
