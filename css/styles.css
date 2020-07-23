@@ -106,32 +106,44 @@ a {
   display: grid;
   width: 95%;
   height: 500px;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: 
     "main main sub1"
     "main main sub2";
   gap: 10px;
   background: gold;
+  margin: 0 auto;
 }
 .large-art {
   border: 1px solid hotpink;
   height: fit-content;
   background: red;
   grid-area: main;
+  height: 100%;
 }
 
 .small-art-1 {
   background: blue;
   height: fit-content;
   grid-area: sub1;
+  height: 100%;
+  width: 100%;
 }
 
 .small-art-2 {
   height: fit-content;
-  background: blueviolet
+  background: blueviolet;
   grid-area: sub2;
+  height: 100%;
 }
 
 /* ------------------------- Latest News --------------------------- */
+
+.section-title {
+  display: inline-block;
+  width: 75%;
+  margin: 0 12.5%;
+}
 
 .grid-container{
   display: grid;
@@ -174,14 +186,19 @@ a {
 @media only screen and (max-width: 700px) {
   /* --------------- Main Articles ----------------*/
 
-  .main-articles {
+  #main-articles {
     grid-template-areas: 
-      "main"
-      "sub1"
-      "sub2";
+      "main main main"
+      "sub1 sub1 sub1"
+      "sub2 sub2 sub2";
   }
 
   /* --------------- Latest News -------------------*/
+
+  .section-title {
+    margin:0;
+  }
+
   .grid-container {
     width: 100%;
     padding: 1%;
