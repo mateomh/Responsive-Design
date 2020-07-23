@@ -246,7 +246,70 @@ a {
 
 /* ------------------------ Article Categories ---------------------*/
 
+.article-categories {
+  width: 75%;
+  background-color: lightgreen;
+  margin: 0 auto;
+  justify-content: space-between;
+}
 
+.category-container {
+  width: 300px;
+  height: fit-content;
+  background-color: lightslategray;
+  margin-top: 1%;
+}
+
+.category-title {
+  color: red;
+}
+
+.img-header {
+  background-image: url(../images/art8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 20vw;
+}
+
+.img-header h3 {
+  padding-top: 50%;
+}
+
+.floating-img {
+  background-color: rgb(233, 196, 182);
+  height: 50px;
+}
+
+.floating-img img {
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-top: 1%;
+}
+
+.other-articles {
+  clear: both;
+}
+
+.other-articles hr {
+  border: none;
+  border-top: 1px solid grey;
+}
+
+.other-articles ul {
+  list-style: none;
+}
+
+.other-articles li {
+  margin: 0;
+  padding: 5% 0;
+}
+
+.other-articles i{
+  color: orangered;
+  padding-right: 2%;
+}
 
 /* ------------------------- Media Queries ------------------------- */
 
