@@ -34,7 +34,7 @@ a {
 
 .flex-row {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
 }
 
 /* ----------------------- Header ------------------------------*/
@@ -180,6 +180,73 @@ a {
   width: 90%;
   margin: 2%;
 }
+
+/* ------------------------- Funding Articles -----------------------*/
+
+.funding-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.funding-header {
+  text-align: start;
+  margin: 1% 0;
+}
+
+.funding-header nav {
+  margin-left: 60%;
+}
+
+.funding-header ul li a {
+  color: red;
+  text-decoration: none;
+}
+
+.funding-body {
+  justify-content: space-between;
+}
+
+.funding-article {
+  width: 230px;
+}
+.funding-article h2 {
+  width: 100%;
+  height: 30px;
+  padding: 2% 0 0 30%;
+  background: red;
+  color: white;
+}
+
+.funding-article h3 {
+  width: 100%;
+  height: 40px;
+  padding: 3% 0 0 30%;
+  background: rgb(238, 174, 174);
+}
+
+.funding-article img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 3%;
+}
+
+.funding-article a {
+  display: inline-block;
+  color: gray;
+  clear: both;
+  font-size: 1.5em;
+  margin: 5% 0 5% 15%;
+}
+
+.funding-article p {
+  line-height: 20px;
+  font-size: 1.2em;
+}
+
+/* ------------------------ Article Categories ---------------------*/
+
+
 
 /* ------------------------- Media Queries ------------------------- */
 
