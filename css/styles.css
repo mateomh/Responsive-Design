@@ -60,6 +60,7 @@ a {
   margin: 0;
   padding: 5% 0;
   color: black;
+  border-bottom: 1px solid grey;
 }
 
 .links nav ul li {
@@ -248,7 +249,7 @@ figure i {
 .large-art {
   background-image:
     radial-gradient(farthest-corner at 80% 30%, rgb(255, 255, 255, 0.5), rgb(233, 24, 24, 0.5), black),
-    url(https://obssr.od.nih.gov/wp-content/uploads/2016/05/young-males-playing-video-games-resized.jpg);
+    url(../images/videogame.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -276,7 +277,7 @@ figure i {
 .small-art-1 {
   background-image:
     linear-gradient(rgb(255, 255, 255, 0.1), black),
-    url(https://media.4rgos.it/i/Argos/8499819_R_Z001A);
+    url(../images/camera.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -289,7 +290,7 @@ figure i {
 .small-art-2 {
   background-image:
     linear-gradient(rgb(255, 255, 255, 0.1), black),
-    url(https://9to5google.com/wp-content/uploads/sites/4/2019/08/android_2019_logo_2.jpg?quality=82&strip=all&w=1600);
+    url(../images/android.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -311,7 +312,9 @@ figure i {
 
   .large-art {
     padding: 20% 2% 1% 2%;
-    background-image: url(https://obssr.od.nih.gov/wp-content/uploads/2016/05/young-males-playing-video-games-resized.jpg);
+    background-image: 
+      linear-gradient(rgb(255, 255, 255, 0.1), black),
+      url(../images/videogame.jpg);
   }
 
   .large-art img {
