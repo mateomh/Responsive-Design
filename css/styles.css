@@ -8,6 +8,8 @@
   box-sizing: border-box;
 }
 
+
+
 header {
   width: 100%;
   height: fit-content;
@@ -94,10 +96,6 @@ a {
   display: none;
 }
 
-#mobile-menu {
-  display: block;
-}
-
 #logo img {
 margin: 0.5% auto;
 }
@@ -148,12 +146,17 @@ margin: 0 5px;
 
   #fixed-nav figure {
     right: 5px;
-    padding: 2.3% 0;
+    padding: 1% 0;
   }
 
   #logo {
     padding: 2%;
   }
+
+  #mobile-menu {
+    display: block;
+  }
+
 }
 
 /* ------------------------- Main Articles ------------------------- */
@@ -168,7 +171,6 @@ margin: 0 5px;
     "main main sub2";
   gap: 10px;
   margin: 4% auto;
-  background-color: orangered;
 }
 .large-art {
   background-image: radial-gradient(farthest-corner at 80% 30%,rgb(255,255,255,0.5),rgb(233, 24, 24,0.5),black),
@@ -180,7 +182,27 @@ margin: 0 5px;
   grid-area: main;
   width: 100%;
   height: 100%;
-  padding-top: 50%;
+  padding: 2% 2% 1% 2%;
+}
+
+.large-art img {
+  width: 70%;
+  height: 30%;
+  margin: 5% 2% 20% 2%;
+}
+
+.large-art h1 {
+  font-size: 2.2em;
+}
+.small-art-2 h1,
+.small-art-1 h1 {
+  font-size: 1.5em;
+}
+
+.large-art p,
+.small-art-1 p,
+.small-art-2 p {
+  color: lightgray;
 }
 
 .small-art-1 {
@@ -207,7 +229,8 @@ margin: 0 5px;
   height: 100%;
   padding: 30% 2% 0 2%;
 }
- /* ----------------- Main Articles Media Queries ------------------ */
+
+/* ----------------- Main Articles Media Queries ------------------ */
  @media screen and (max-width: 900px) {
    #main-articles{
     grid-template-areas: 
@@ -217,8 +240,19 @@ margin: 0 5px;
     grid-template-rows: 1fr 0.7fr 0.7fr;
     height: fit-content;
    }
+
    .large-art{
+    padding: 20% 2% 1% 2%;
     background-image: url(https://obssr.od.nih.gov/wp-content/uploads/2016/05/young-males-playing-video-games-resized.jpg);
+   }
+
+   .large-art img {
+    display: none;
+   }
+
+   .small-art-2,
+   .small-art-1 {
+    padding: 15% 2% 0 2%;
    }
  }
 
@@ -375,7 +409,7 @@ margin: 0 5px;
 /* ------------------------ Funding articles Media Queries -------- */
 @media screen and (max-width: 900px) {
   #funding-container {
-    width: 90%;
+    width: 95%;
     margin: 3% auto;
   }
 
@@ -452,32 +486,41 @@ margin: 0 5px;
 
 .img-header1{
   background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art8.jpg);
+  padding: 15% 2% 1% 2%;
 }
 
 .img-header2{
   background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art1.png);
+  padding: 15% 2% 1% 2%;
 }
 
 .img-header3{
   background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art2.png);
+  padding: 15% 2% 1% 2%;
 }
 .img-header4{
   background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art3.png);
+  padding: 15% 2% 1% 2%;
 }
 .img-header5{
   background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art4.png);
+  padding: 15% 2% 1% 2%;
 }
 .img-header6{
   background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art5.png);
+  padding: 15% 2% 1% 2%;
 }
 .img-header7{
   background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art6.png);
+  padding: 15% 2% 1% 2%;
 }
 .img-header8{
   background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art7.jpg);
+  padding: 15% 2% 1% 2%;
 }
 .img-header9{
   background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art8.jpg);
+  padding: 15% 2% 1% 2%;
 }
 
 .img-header h3 {
@@ -497,6 +540,11 @@ margin: 0 5px;
   margin-top: 1%;
 }
 
+.floating-img h4 {
+  font-size: 0.9em;
+  padding: 2%;
+}
+
 .other-articles {
   clear: both;
 }
@@ -506,7 +554,7 @@ margin: 0 5px;
   border-top: 1px solid grey;
 }
 
-.other-articles ul{
+.other-articles ul {
   list-style: none;
 }
 
@@ -525,8 +573,23 @@ margin: 0 5px;
   padding-right: 2%;
 }
 
-/* ------------------------- Latest Deals -------------------------*/
+/* ------------------------- Article Categories Media Queries -------------------------*/
 
+@media screen and (max-width: 900px) {
+  #article-categories {
+    width: 95%;
+  }
+
+  .category-container {
+    width: 100%;
+  }
+
+  .img-header {
+    height: 25%;
+    padding: 5% 2% 1% 2%;
+  }
+
+}
 
 /* ------------------------- Footer --------------------------------*/
 
@@ -596,7 +659,7 @@ margin: 0 5px;
   }
 
   .icons div {
-    padding-top: 1.5%;
+    padding-top: 1.2%;
     margin: 0 0 0 1%;
   }
 
@@ -609,9 +672,8 @@ margin: 0 5px;
 @media screen and (max-width: 900px) {
   .handy-btn {
     border-radius: 0%;
-    padding: 2.5% 0 0 3%;
+    padding: 1.5% 0 0 1.5%;
     bottom: 5px;
     right: 5px;
   }
-
 }
