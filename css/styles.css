@@ -388,7 +388,8 @@ figure img {
 }
 
 .other-articles ul {
-  list-style: none;
+  list-style-position: inside;
+  /* list-style: none; */
 }
 
 .other-articles li {
@@ -396,6 +397,13 @@ figure img {
   padding: 5% 0;
   color: black;
 }
+
+/* 
+.other-articles li:before {
+  color: orangered;
+  content: "•";
+  padding-left: 2%;
+} */
 
 .other-articles a{
   color: black;
