@@ -130,6 +130,9 @@ margin: 0 5px;
 /* -----------------------------Header Media Queries -----------------------*/
 
 @media screen and (max-width: 900px) {
+  h2,p {
+    font-size: 0.4rem;
+  }
   #top-nav{
     display: none;
     top: -20px;
@@ -236,7 +239,7 @@ margin: 0 5px;
   display: grid;
   width: 75%;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fill,400px);
+  grid-template-columns: repeat(auto-fill,200px);
   grid-gap: 30px;
   justify-content: space-between;
 }
@@ -254,6 +257,7 @@ margin: 0 5px;
 
 .article-container p {
   padding: 2%;
+  color: grey;
 }
 
 .article-image {
@@ -274,22 +278,22 @@ margin: 0 5px;
     width: 100%;
     padding: 1%;
     justify-content: start;
+    grid-template-columns: repeat(auto-fill,100%);
   }
 
   .article-container {
-    width: 200%;
-    padding: 5% 2%;
-    margin-left: 0.5em;
+    width: 100%;
   }
 
   .article-image {
     width: 20%;
-    height: 100%;
+    height: 80px;
     float: left;
   }
 
-  h2,p {
-    font-size: 0.4rem;
+  .article-container h2,.article-container p {
+    font-size: 1.4em;
+    padding: 2% 0 0 0;
   }
 }
 
@@ -433,15 +437,48 @@ margin: 0 5px;
 }
 
 .category-title {
-  color: red;
+  color: orangered;
+  font-weight: bold;
+  margin-bottom: 4%;
 }
 
 .img-header {
-  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art8.jpg);
+  /* background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art8.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 20vw;
+  color: white;
+}
+
+.img-header1{
+  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art8.jpg);
+}
+
+.img-header2{
+  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art1.png);
+}
+
+.img-header3{
+  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art2.png);
+}
+.img-header4{
+  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art3.png);
+}
+.img-header5{
+  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art4.png);
+}
+.img-header6{
+  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art5.png);
+}
+.img-header7{
+  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art6.png);
+}
+.img-header8{
+  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art7.jpg);
+}
+.img-header9{
+  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art8.jpg);
 }
 
 .img-header h3 {
@@ -451,6 +488,7 @@ margin: 0 5px;
 .floating-img {
   background-color: rgb(233, 196, 182);
   height: 50px;
+  color: orangered;
 }
 
 .floating-img img {
@@ -461,7 +499,7 @@ margin: 0 5px;
 }
 
 .other-articles {
-  /* clear: both; */
+  clear: both;
   background-color: blue;
 }
 
