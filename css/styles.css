@@ -94,7 +94,42 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 700px) {
+#mobile-menu {
+  display: block;
+}
+
+#logo img {
+margin: 0.5% auto;
+}
+
+#fixed-nav nav {
+width: fit-content;
+text-align: start;
+margin: 2% 0;
+}
+
+#fixed-nav nav a {
+color: gray;
+width: 100px;
+margin: 1% 10px;
+font-size: 1.5em;
+}
+
+#fixed-nav figure {
+position: absolute;
+right: 5px;
+width: fit-content;
+height: 48px;
+margin: 2% 0;
+}
+
+figure i {
+margin: 0 5px;
+}
+
+/* -----------------------------Header Media Queries -----------------------*/
+
+@media screen and (max-width: 900px) {
   #top-nav{
     display: none;
     top: -20px;
@@ -116,40 +151,6 @@ a {
   #logo {
     padding: 2%;
   }
-
-  #mobile-menu {
-    display: block;
-  }
-  
-}
-
-#logo img {
-  margin: 0.5% auto;
-}
-
-#fixed-nav nav {
-  width: fit-content;
-  text-align: start;
-  margin: 2% 0;
-}
-
-#fixed-nav nav a {
-  color: gray;
-  width: 100px;
-  margin: 1% 10px;
-  font-size: 1.5em;
-}
-
-#fixed-nav figure {
-  position: absolute;
-  right: 5px;
-  width: fit-content;
-  height: 48px;
-  margin: 2% 0;
-}
-
-figure i {
-  margin: 0 5px;
 }
 
 /* ------------------------- Main Articles ------------------------- */
@@ -204,7 +205,7 @@ figure i {
   padding: 30% 2% 0 2%;
 }
  /* ----------------- Main Articles Media Queries ------------------ */
- @media screen and (max-width: 700px) {
+ @media screen and (max-width: 900px) {
    #main-articles{
     grid-template-areas: 
       "main main main"
@@ -235,7 +236,7 @@ figure i {
   display: grid;
   width: 75%;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fill,200px);
+  grid-template-columns: repeat(auto-fill,400px);
   grid-gap: 30px;
   justify-content: space-between;
 }
@@ -248,7 +249,7 @@ figure i {
 }
 
 .article-container h2 {
-  padding: 0 2%;
+  padding: 1% 2%;
 }
 
 .article-container p {
@@ -264,7 +265,7 @@ figure i {
 }
 
 /* --------------- Latest News Media Queries ----------------- */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 900px) {
   .section-title {
     margin-left:5%;
   }
@@ -301,17 +302,19 @@ figure i {
 
 .funding-header {
   text-align: start;
-  margin: 1% 0;
+  margin: 2% 0;
   width: 100%;
 }
 
 .funding-header nav ul li {
   display: inline;
+  padding: 0 0 0 10px;
 }
 
 .funding-header nav {
-  margin-left: 60%;
-  text-align: end;
+  width: 70%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 40%;
 }
 
 .funding-header ul li a {
@@ -325,8 +328,10 @@ figure i {
 
 .funding-article {
   width: 230px;
+  background: rgb(255, 230, 220);
 }
 .funding-article h2 {
+  font-size: 2em;
   width: 100%;
   height: 30px;
   padding: 2% 0 0 30%;
@@ -335,6 +340,7 @@ figure i {
 }
 
 .funding-article h3 {
+  font-size: 1.5em;
   width: 100%;
   height: 40px;
   padding: 3% 0 0 30%;
@@ -352,18 +358,64 @@ figure i {
   display: inline-block;
   color: gray;
   clear: both;
-  font-size: 1.5em;
-  margin: 5% 0 5% 15%;
+  font-size: 1.3em;
+  margin: 2% 0 2% 2%;
 }
 
 .funding-article p {
+  padding: 0 0 0 2%;
   line-height: 20px;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /* ------------------------ Funding articles Media Queries -------- */
-@media screen and (max-width: 700px) {
-  
+@media screen and (max-width: 900px) {
+  #funding-container {
+    width: 90%;
+    margin: 3% auto;
+  }
+
+  .funding-header {
+    display: block;
+  }
+
+  .funding-header h1 {
+    font-size: 2.3em;
+  }
+
+  .funding-header nav {
+    width: 100%;
+    margin: 4% 0 4% 0;
+    padding: 0 0 0 5%;
+  }
+
+  .funding-header nav ul li {
+    display: block;
+    padding: 2% 0 0 0;
+  }
+
+  .funding-body {
+    justify-content: center;
+  }
+
+  .funding-article {
+    margin: 3% 0;
+    width: 100%;
+  }
+
+  .funding-article h2 {
+    padding: 1% 0 0 10%;
+  }
+
+  .funding-article h3 {
+    width: 100%;
+    height: 40px;
+    padding: 0.5% 0 0 10%;
+  }
+
+  .funding-article img {
+    margin: 1%;
+  }
 }
 
 /* ------------------------ Article Categories ---------------------*/
@@ -420,8 +472,6 @@ figure i {
 
 .other-articles ul {
   display: list-item;
-  /* list-style-position: initial; */
-  /* list-style: none; */
 }
 
 .other-articles li {
@@ -504,7 +554,7 @@ figure i {
 
 /* ----------------------------Footer Media Queries --------------------------*/
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   footer {
     margin-top: 15%;
   }
@@ -520,11 +570,12 @@ figure i {
 }
 
 /* ------------------------- Handy-btn Media Queries ------------------------- */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .handy-btn {
     border-radius: 0%;
     padding: 2.5% 0 0 3%;
     bottom: 5px;
     right: 5px;
   }
+
 }
