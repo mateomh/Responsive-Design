@@ -1,4 +1,4 @@
-/* ------------------Global Styles ---------------------------*/
+/* ------------------Global Styles --------------------------- */
 
 *,
 *::before,
@@ -7,8 +7,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-
 
 header {
   width: 100%;
@@ -45,12 +43,32 @@ a {
   flex-flow: row wrap;
 }
 
-/* ----------------------- Header ------------------------------*/
+/* ----------------------- Header ------------------------------ */
 
 #top-nav {
   width: 100%;
   height: 20px;
   background: black;
+}
+
+.links li {
+  font-size: 1.5em;
+  padding: 3% 1%;
+}
+
+.other-articles li {
+  margin: 0;
+  padding: 5% 0;
+  color: black;
+}
+
+.links nav ul li {
+  display: inline;
+}
+
+.funding-header nav ul li {
+  display: inline;
+  padding: 0 0 0 10px;
 }
 
 #top-nav ul li {
@@ -96,42 +114,97 @@ a {
   display: none;
 }
 
+.footer-disclaimer img {
+  width: 50px;
+  height: 20px;
+  padding-top: 10px;
+}
+
+.floating-img img {
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-top: 1%;
+}
+
+.funding-article img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin: 3%;
+}
+
+.large-art img {
+  width: 70%;
+  height: 30%;
+  margin: 5% 2% 20% 2%;
+}
+
 #logo img {
-margin: 0.5% auto;
+  margin: 0.5% auto;
+}
+
+.funding-header nav {
+  width: 70%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 40%;
+}
+
+.other-articles a {
+  color: black;
+}
+
+.article-container a {
+  color: black;
+}
+
+.funding-article a {
+  display: inline-block;
+  color: gray;
+  clear: both;
+  font-size: 1.3em;
+  margin: 2% 0 2% 2%;
+}
+
+.funding-header ul li a {
+  color: red;
+  text-decoration: none;
 }
 
 #fixed-nav nav {
-width: fit-content;
-text-align: start;
-margin: 2% 0;
+  width: fit-content;
+  text-align: start;
+  margin: 2% 0;
 }
 
 #fixed-nav nav a {
-color: gray;
-width: 100px;
-margin: 1% 10px;
-font-size: 1.5em;
+  color: gray;
+  width: 100px;
+  margin: 1% 10px;
+  font-size: 1.5em;
 }
 
 #fixed-nav figure {
-position: absolute;
-right: 5px;
-width: fit-content;
-height: 48px;
-margin: 2% 0;
+  position: absolute;
+  right: 5px;
+  width: fit-content;
+  height: 48px;
+  margin: 2% 0;
 }
 
 figure i {
-margin: 0 5px;
+  margin: 0 5px;
 }
 
-/* -----------------------------Header Media Queries -----------------------*/
+/* -----------------------------Header Media Queries ----------------------- */
 
 @media screen and (max-width: 900px) {
-  h2,p {
+  h2,
+  p {
     font-size: 0.4rem;
   }
-  #top-nav{
+
+  #top-nav {
     display: none;
     top: -20px;
   }
@@ -156,7 +229,6 @@ margin: 0 5px;
   #mobile-menu {
     display: block;
   }
-
 }
 
 /* ------------------------- Main Articles ------------------------- */
@@ -166,34 +238,30 @@ margin: 0 5px;
   width: 95%;
   height: 500px;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     "main main sub1"
     "main main sub2";
   gap: 10px;
   margin: 4% auto;
 }
+
 .large-art {
-  background-image: radial-gradient(farthest-corner at 80% 30%,rgb(255,255,255,0.5),rgb(233, 24, 24,0.5),black),
+  background-image:
+    radial-gradient(farthest-corner at 80% 30%, rgb(255, 255, 255, 0.5), rgb(233, 24, 24, 0.5), black),
     url(https://obssr.od.nih.gov/wp-content/uploads/2016/05/young-males-playing-video-games-resized.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: fit-content;
   grid-area: main;
   width: 100%;
   height: 100%;
   padding: 2% 2% 1% 2%;
 }
 
-.large-art img {
-  width: 70%;
-  height: 30%;
-  margin: 5% 2% 20% 2%;
-}
-
 .large-art h1 {
   font-size: 2.2em;
 }
+
 .small-art-2 h1,
 .small-art-1 h1 {
   font-size: 1.5em;
@@ -206,12 +274,12 @@ margin: 0 5px;
 }
 
 .small-art-1 {
-  background-image: linear-gradient(rgb(255,255,255,0.1),black),
+  background-image:
+    linear-gradient(rgb(255, 255, 255, 0.1), black),
     url(https://media.4rgos.it/i/Argos/8499819_R_Z001A);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: fit-content;
   grid-area: sub1;
   height: 100%;
   width: 100%;
@@ -219,42 +287,42 @@ margin: 0 5px;
 }
 
 .small-art-2 {
-  background-image: linear-gradient(rgb(255,255,255,0.1),black),
+  background-image:
+    linear-gradient(rgb(255, 255, 255, 0.1), black),
     url(https://9to5google.com/wp-content/uploads/sites/4/2019/08/android_2019_logo_2.jpg?quality=82&strip=all&w=1600);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: fit-content;
   grid-area: sub2;
   height: 100%;
   padding: 30% 2% 0 2%;
 }
 
 /* ----------------- Main Articles Media Queries ------------------ */
- @media screen and (max-width: 900px) {
-   #main-articles{
-    grid-template-areas: 
+@media screen and (max-width: 900px) {
+  #main-articles {
+    grid-template-areas:
       "main main main"
       "sub1 sub1 sub1"
       "sub2 sub2 sub2";
     grid-template-rows: 1fr 0.7fr 0.7fr;
     height: fit-content;
-   }
+  }
 
-   .large-art{
+  .large-art {
     padding: 20% 2% 1% 2%;
     background-image: url(https://obssr.od.nih.gov/wp-content/uploads/2016/05/young-males-playing-video-games-resized.jpg);
-   }
+  }
 
-   .large-art img {
+  .large-art img {
     display: none;
-   }
+  }
 
-   .small-art-2,
-   .small-art-1 {
+  .small-art-2,
+  .small-art-1 {
     padding: 15% 2% 0 2%;
-   }
- }
+  }
+}
 
 
 /* ------------------------- Latest News --------------------------- */
@@ -269,23 +337,20 @@ margin: 0 5px;
   margin: 0 12.5%;
 }
 
-.grid-container{
+.grid-container {
   display: grid;
   width: 75%;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fill,200px);
+  grid-template-columns: repeat(auto-fill, 200px);
   grid-gap: 30px;
   justify-content: space-between;
 }
 
-.article-container{
+.article-container {
   width: 100%;
   height: fit-content;
   margin: 0;
   padding: 0;
-}
-.article-container a {
-  color: black;
 }
 
 .article-container h2 {
@@ -308,14 +373,14 @@ margin: 0 5px;
 /* --------------- Latest News Media Queries ----------------- */
 @media only screen and (max-width: 900px) {
   .section-title {
-    margin-left:5%;
+    margin-left: 5%;
   }
 
   .grid-container {
     width: 100%;
     padding: 1%;
     justify-content: start;
-    grid-template-columns: repeat(auto-fill,100%);
+    grid-template-columns: repeat(auto-fill, 100%);
   }
 
   .article-container {
@@ -328,13 +393,14 @@ margin: 0 5px;
     float: left;
   }
 
-  .article-container h2,.article-container p {
+  .article-container h2,
+  .article-container p {
     font-size: 1.4em;
     padding: 2% 0 0 0;
   }
 }
 
-/* ------------------------- Funding Articles -----------------------*/
+/* ------------------------- Funding Articles ----------------------- */
 
 #funding-container {
   width: 75%;
@@ -347,22 +413,6 @@ margin: 0 5px;
   width: 100%;
 }
 
-.funding-header nav ul li {
-  display: inline;
-  padding: 0 0 0 10px;
-}
-
-.funding-header nav {
-  width: 70%;
-  margin: 0 0 0 0;
-  padding: 0 0 0 40%;
-}
-
-.funding-header ul li a {
-  color: red;
-  text-decoration: none;
-}
-
 .funding-body {
   justify-content: space-between;
 }
@@ -371,6 +421,7 @@ margin: 0 5px;
   width: 230px;
   background: rgb(255, 230, 220);
 }
+
 .funding-article h2 {
   font-size: 2em;
   width: 100%;
@@ -386,21 +437,6 @@ margin: 0 5px;
   height: 40px;
   padding: 3% 0 0 30%;
   background: rgb(238, 174, 174);
-}
-
-.funding-article img {
-  width: 50px;
-  height: 50px;
-  float: left;
-  margin: 3%;
-}
-
-.funding-article a {
-  display: inline-block;
-  color: gray;
-  clear: both;
-  font-size: 1.3em;
-  margin: 2% 0 2% 2%;
 }
 
 .funding-article p {
@@ -459,7 +495,7 @@ margin: 0 5px;
   }
 }
 
-/* ------------------------ Article Categories ---------------------*/
+/* ------------------------ Article Categories --------------------- */
 
 #article-categories {
   width: 75%;
@@ -487,42 +523,48 @@ margin: 0 5px;
   color: white;
 }
 
-.img-header1{
-  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art8.jpg);
+.img-header1 {
+  background-image: linear-gradient(rgb(255, 255, 255, 0.1), black), url(../images/art8.jpg);
   padding: 15% 2% 1% 2%;
 }
 
-.img-header2{
-  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art1.png);
+.img-header2 {
+  background-image: linear-gradient(rgb(255, 255, 255, 0.1), black), url(../images/art1.png);
   padding: 15% 2% 1% 2%;
 }
 
-.img-header3{
-  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art2.png);
+.img-header3 {
+  background-image: linear-gradient(rgb(255, 255, 255, 0.1), black), url(../images/art2.png);
   padding: 15% 2% 1% 2%;
 }
-.img-header4{
-  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art3.png);
+
+.img-header4 {
+  background-image: linear-gradient(rgb(255, 255, 255, 0.1), black), url(../images/art3.png);
   padding: 15% 2% 1% 2%;
 }
-.img-header5{
-  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art4.png);
+
+.img-header5 {
+  background-image: linear-gradient(rgb(255, 255, 255, 0.1), black), url(../images/art4.png);
   padding: 15% 2% 1% 2%;
 }
-.img-header6{
-  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art5.png);
+
+.img-header6 {
+  background-image: linear-gradient(rgb(255, 255, 255, 0.1), black), url(../images/art5.png);
   padding: 15% 2% 1% 2%;
 }
-.img-header7{
-  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art6.png);
+
+.img-header7 {
+  background-image: linear-gradient(rgb(255, 255, 255, 0.1), black), url(../images/art6.png);
   padding: 15% 2% 1% 2%;
 }
-.img-header8{
-  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art7.jpg);
+
+.img-header8 {
+  background-image: linear-gradient(rgb(255, 255, 255, 0.1), black), url(../images/art7.jpg);
   padding: 15% 2% 1% 2%;
 }
-.img-header9{
-  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art8.jpg);
+
+.img-header9 {
+  background-image: linear-gradient(rgb(255, 255, 255, 0.1), black), url(../images/art8.jpg);
   padding: 15% 2% 1% 2%;
 }
 
@@ -534,13 +576,6 @@ margin: 0 5px;
   background-color: rgb(233, 196, 182);
   height: 50px;
   color: orangered;
-}
-
-.floating-img img {
-  width: 40px;
-  height: 40px;
-  float: right;
-  margin-top: 1%;
 }
 
 .floating-img h4 {
@@ -561,22 +596,12 @@ margin: 0 5px;
   list-style: none;
 }
 
-.other-articles li {
-  margin: 0;
-  padding: 5% 0;
-  color: black;
-}
-
-.other-articles a{
-  color: black;
-}
-
-.other-articles i{
+.other-articles i {
   color: orangered;
   padding-right: 2%;
 }
 
-/* ------------------------- Article Categories Media Queries -------------------------*/
+/* ------------------------- Article Categories Media Queries ------------------------- */
 
 @media screen and (max-width: 900px) {
   #article-categories {
@@ -591,25 +616,15 @@ margin: 0 5px;
     height: 25%;
     padding: 5% 2% 1% 2%;
   }
-
 }
 
-/* ------------------------- Footer --------------------------------*/
+/* ------------------------- Footer -------------------------------- */
 
 .footer-links {
   height: 60%;
   background: rgb(36, 36, 36);
   text-align: center;
   padding: 2% 0;
-}
-
-.links nav ul li {
-  display: inline;
-}
-
-.links li {
-  font-size: 1.5em;
-  padding: 3% 1%;
 }
 
 .icons {
@@ -632,13 +647,7 @@ margin: 0 5px;
   background: rgb(15, 15, 15);
   text-align: center;
   padding: 5% 0;
-  color:lightgray;
-}
-
-.footer-disclaimer img {
-  width: 50px;
-  height: 20px;
-  padding-top: 10px;
+  color: lightgray;
 }
 
 .handy-btn {
@@ -654,7 +663,7 @@ margin: 0 5px;
   padding: 0.5% 0 0 0.7%;
 }
 
-/* ----------------------------Footer Media Queries --------------------------*/
+/* ----------------------------Footer Media Queries -------------------------- */
 
 @media screen and (max-width: 900px) {
   footer {
