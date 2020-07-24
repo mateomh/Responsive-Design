@@ -443,7 +443,6 @@ margin: 0 5px;
 }
 
 .img-header {
-  /* background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art8.jpg); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -500,7 +499,6 @@ margin: 0 5px;
 
 .other-articles {
   clear: both;
-  background-color: blue;
 }
 
 .other-articles hr {
@@ -508,8 +506,8 @@ margin: 0 5px;
   border-top: 1px solid grey;
 }
 
-.other-articles ul {
-  display: list-item;
+.other-articles ul{
+  list-style: none;
 }
 
 .other-articles li {
