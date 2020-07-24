@@ -335,6 +335,7 @@ figure i {
   display: inline-block;
   width: 75%;
   margin: 0 12.5%;
+  color: orangered;
 }
 
 .grid-container {
@@ -411,6 +412,10 @@ figure i {
   text-align: start;
   margin: 2% 0;
   width: 100%;
+}
+
+.funding-header h1 {
+  color: orangered;
 }
 
 .funding-body {

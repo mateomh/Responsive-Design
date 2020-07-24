@@ -1,59 +1,38 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Responsive Web Design
 
-> One paragraph statement about the project.
+> The purporse of this project was to crate a responsive clone of the TNW page.
 
 ![screenshot](./app_screenshot.png)
 
-Additional description about the project and its features.
+At the breakpoint of 900px the website changes the layout to fit all the content on a smaller screen. All of the responsive components were achived by using jus css, no additional libraries or frameworks were used.
 
 ## Built With
 
-- Major languages,
-- frameworks,
-- technologies used
+- HTML / CSS,
+- Media queries
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
+[Live Demo Link](https://raw.githack.com/mateomh/Responsive-Design/tnw-page/index.html)
 
 ### Usage
-
-### Run tests
-
-### Deployment
-
+The breakpoint is set to 900px in the media query
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Mateo mojica**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@mateomh](https://github.com/mateomh)
+- Twitter: [@mateo_m_h](https://twitter.com/mateo_m_h)
+- Linkedin: [linkedin](https://linkedin.com/mateo_mojica_hernandez)
 
-👤 **Author2**
+👤 **Jurgen Clausen**
 
-- Github: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- Linkedin: [linkedin](https://linkedin.com/linkedinhandle)
+- Github: [@jurgen1c](https://github.com/jurgen1c)
+- LinkenIn:[LinkenIn](https://www.linkedin.com/in/jurgen-clausen-2740061a9/)
 
 ## 🤝 Contributing
 
@@ -67,9 +46,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- The Next Web
+- Microverse
+- Odin Project
 
 ## 📝 License
 
