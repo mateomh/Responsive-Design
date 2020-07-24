@@ -94,7 +94,7 @@ a {
   display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   #top-nav{
     display: none;
     top: -20px;
@@ -167,30 +167,56 @@ figure i {
   background-color: orangered;
 }
 .large-art {
-  background-image: url();
+  background-image: radial-gradient(farthest-corner at 80% 30%,rgb(255,255,255,0.5),rgb(233, 24, 24,0.5),black),
+    url(https://obssr.od.nih.gov/wp-content/uploads/2016/05/young-males-playing-video-games-resized.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: fit-content;
   grid-area: main;
+  width: 100%;
   height: 100%;
   padding-top: 50%;
 }
 
 .small-art-1 {
-  background-image: url();
+  background-image: linear-gradient(rgb(255,255,255,0.1),black),
+    url(https://media.4rgos.it/i/Argos/8499819_R_Z001A);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: fit-content;
   grid-area: sub1;
   height: 100%;
   width: 100%;
-  padding-top: 30%;
+  padding: 30% 2% 0 2%;
 }
 
 .small-art-2 {
-  background-image: url();
+  background-image: linear-gradient(rgb(255,255,255,0.1),black),
+    url(https://9to5google.com/wp-content/uploads/sites/4/2019/08/android_2019_logo_2.jpg?quality=82&strip=all&w=1600);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: fit-content;
   grid-area: sub2;
   height: 100%;
-  padding-top: 30%;
+  padding: 30% 2% 0 2%;
 }
-
+ /* ----------------- Main Articles Media Queries ------------------ */
+ @media screen and (max-width: 700px) {
+   #main-articles{
+    grid-template-areas: 
+      "main main main"
+      "sub1 sub1 sub1"
+      "sub2 sub2 sub2";
+    grid-template-rows: 1fr 0.7fr 0.7fr;
+    height: fit-content;
+   }
+   .large-art{
+    background-image: url(https://obssr.od.nih.gov/wp-content/uploads/2016/05/young-males-playing-video-games-resized.jpg);
+   }
+ }
 
 
 /* ------------------------- Latest News --------------------------- */
@@ -237,20 +263,10 @@ figure i {
   margin: 2%;
 }
 
+/* --------------- Latest News Media Queries ----------------- */
 @media only screen and (max-width: 700px) {
-  /* --------------- Main Articles ----------------*/
-
-  #main-articles {
-    grid-template-areas: 
-      "main main main"
-      "sub1 sub1 sub1"
-      "sub2 sub2 sub2";
-  }
-
-  /* --------------- Latest News -------------------*/
-
   .section-title {
-    margin:0;
+    margin-left:5%;
   }
 
   .grid-container {
@@ -260,7 +276,7 @@ figure i {
   }
 
   .article-container {
-    width: 150%;
+    width: 200%;
     padding: 5% 2%;
     margin-left: 0.5em;
   }
@@ -345,6 +361,11 @@ figure i {
   font-size: 1.2em;
 }
 
+/* ------------------------ Funding articles Media Queries -------- */
+@media screen and (max-width: 700px) {
+  
+}
+
 /* ------------------------ Article Categories ---------------------*/
 
 #article-categories {
@@ -364,7 +385,7 @@ figure i {
 }
 
 .img-header {
-  background-image: url(../images/art8.jpg);
+  background-image: linear-gradient(rgb(255,255,255,0.1),black), url(../images/art8.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -388,7 +409,8 @@ figure i {
 }
 
 .other-articles {
-  clear: both;
+  /* clear: both; */
+  background-color: blue;
 }
 
 .other-articles hr {
@@ -397,8 +419,8 @@ figure i {
 }
 
 .other-articles ul {
-  /*display: list-item;*/
-  list-style-position: initial;
+  display: list-item;
+  /* list-style-position: initial; */
   /* list-style: none; */
 }
 
@@ -407,13 +429,6 @@ figure i {
   padding: 5% 0;
   color: black;
 }
-
-/* 
-.other-articles li:before {
-  color: orangered;
-  content: "•";
-  padding-left: 2%;
-} */
 
 .other-articles a{
   color: black;
