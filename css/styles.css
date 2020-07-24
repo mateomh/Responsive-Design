@@ -16,6 +16,7 @@ header {
 body {
   height: 2000px;
   font-size: 62.5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 footer {
@@ -57,17 +58,19 @@ a {
 
 .top-nav-1 {
   width: 60%;
+  margin: 0.4% 0;
 }
 
 .top-nav-2 {
   width: 40%;
   text-align: end;
+  margin: 0.4% 0;
+  padding: 0 10px 0 0;
 }
 
 #fixed-nav {
-  position: fixed;
-  top: 20px;
-  width: 120%;
+  position: sticky;
+  width: 100%;
   height: 60px;
   padding: 0;
   margin: 0 auto;
@@ -80,7 +83,11 @@ a {
   width: 106px;
   height: 60px;
   background: linear-gradient(45deg, red, purple);
-  margin: 0 0 0 -108px;
+  padding: 1.6%;
+}
+
+#mobile-menu {
+  display: none;
 }
 
 @media screen and (max-width: 700px) {
@@ -92,21 +99,32 @@ a {
   #fixed-nav {
     top: 0;
   }
-  #fixed-nav ul {
+
+  #fixed-nav nav {
     display: none;
   }
 
-  #logo {
-    margin: 0;
+  #fixed-nav figure {
+    right: 5px;
+    padding: 2.3% 0;
   }
+
+  #logo {
+    padding: 5.3%;
+  }
+
+  #mobile-menu {
+    display: block;
+  }
+  
 }
 
 #logo img {
-  margin: 0 auto;
+  margin: 0.5% auto;
 }
 
 #fixed-nav nav {
-  width: 70%;
+  width: fit-content;
   text-align: start;
   margin: 2% 0;
 }
@@ -114,14 +132,20 @@ a {
 #fixed-nav nav a {
   color: gray;
   width: 100px;
-  padding: 0 0 0 15px;
+  margin: 1% 10px;
+  font-size: 1.5em;
 }
 
 #fixed-nav figure {
-  align-content: flex-end;
-  width: 10%;
+  position: absolute;
+  right: 5px;
+  width: fit-content;
   height: 48px;
-  margin: 2% 5px 0 0;
+  margin: 2% 0;
+}
+
+figure img {
+  margin: 0 5px;
 }
 
 /* ------------------------- Main Articles ------------------------- */
