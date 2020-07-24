@@ -312,7 +312,7 @@ figure i {
 
   .large-art {
     padding: 20% 2% 1% 2%;
-    background-image: 
+    background-image:
       linear-gradient(rgb(255, 255, 255, 0.1), black),
       url(../images/videogame.jpg);
   }
