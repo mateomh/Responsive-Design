@@ -284,6 +284,9 @@ margin: 0 5px;
   margin: 0;
   padding: 0;
 }
+.article-container a {
+  color: black;
+}
 
 .article-container h2 {
   padding: 1% 2%;
