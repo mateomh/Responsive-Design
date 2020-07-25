@@ -203,7 +203,7 @@ figure i {
     width: 106px;
     height: 100%;
     background: linear-gradient(45deg, red, purple);
-    padding: 1.6%;
+    padding: 3% 2%;
   }
 
   #top-nav {
@@ -222,10 +222,6 @@ figure i {
   #fixed-nav figure {
     right: 5px;
     padding: 2% 0;
-  }
-
-  #logo {
-    padding: 2%;
   }
 
   #mobile-menu {
