@@ -105,10 +105,7 @@ a {
 }
 
 #logo {
-  width: 106px;
-  height: 100%;
-  background: linear-gradient(45deg, red, purple);
-  padding: 1.6%;
+  display: none;
 }
 
 #mobile-menu {
@@ -143,12 +140,6 @@ a {
 
 #logo img {
   margin: 0.5% auto;
-}
-
-.funding-header nav {
-  width: 70%;
-  margin: 0 0 0 0;
-  padding: 0 0 0 40%;
 }
 
 .other-articles a {
@@ -189,20 +180,30 @@ a {
   position: absolute;
   right: 5px;
   width: fit-content;
-  height: 48px;
+  height: 100%;
   margin: 2% 0;
 }
 
 figure i {
   margin: 0 5px;
+  height: 100%;
+  border: 1px solid lightgray;
 }
 
 /* -----------------------------Header Media Queries ----------------------- */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   h2,
   p {
     font-size: 0.4rem;
+  }
+
+  #logo {
+    display: block;
+    width: 106px;
+    height: 100%;
+    background: linear-gradient(45deg, red, purple);
+    padding: 1.6%;
   }
 
   #top-nav {
@@ -220,7 +221,7 @@ figure i {
 
   #fixed-nav figure {
     right: 5px;
-    padding: 1% 0;
+    padding: 2% 0;
   }
 
   #logo {
@@ -229,6 +230,7 @@ figure i {
 
   #mobile-menu {
     display: block;
+    color: orangered;
   }
 }
 
@@ -243,7 +245,7 @@ figure i {
     "main main sub1"
     "main main sub2";
   gap: 10px;
-  margin: 4% auto;
+  margin: 0 auto;
 }
 
 .large-art {
@@ -300,7 +302,7 @@ figure i {
 }
 
 /* ----------------- Main Articles Media Queries ------------------ */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   #main-articles {
     grid-template-areas:
       "main main main"
@@ -344,8 +346,8 @@ figure i {
   display: grid;
   width: 75%;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fill, 200px);
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fill, 250px);
+  grid-gap: 10px;
   justify-content: space-between;
 }
 
@@ -374,7 +376,7 @@ figure i {
 }
 
 /* --------------- Latest News Media Queries ----------------- */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
   .section-title {
     margin-left: 5%;
   }
@@ -411,9 +413,9 @@ figure i {
 }
 
 .funding-header {
-  text-align: start;
   margin: 2% 0;
   width: 100%;
+  justify-content: space-between;
 }
 
 .funding-header h1 {
@@ -672,13 +674,13 @@ figure i {
 
 /* ----------------------------Footer Media Queries -------------------------- */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   footer {
-    margin-top: 15%;
+    margin-top: 30%;
   }
 
   .icons div {
-    padding-top: 1.2%;
+    padding-top: 2.5%;
     margin: 0 0 0 1%;
   }
 
@@ -691,7 +693,7 @@ figure i {
 @media screen and (max-width: 900px) {
   .handy-btn {
     border-radius: 0%;
-    padding: 1.5% 0 0 1.5%;
+    padding: 1.5% 0 0 2%;
     bottom: 5px;
     right: 5px;
   }
