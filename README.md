@@ -12,6 +12,7 @@ At the breakpoint of 900px the website changes the layout to fit all the content
 
 - HTML / CSS,
 - Media queries
+- VSCode
 
 ## Live Demo
 
