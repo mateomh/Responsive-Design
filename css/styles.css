@@ -395,7 +395,7 @@ figure i {
   margin: 2%;
 }
 
-/* --------------- Latest News Media Queries ----------------- */
+/* --------------- Latest News Mobile Media Queries ----------------- */
 @media only screen and (max-width: 700px) {
   .section-title {
     margin-left: 5%;
@@ -518,6 +518,8 @@ figure i {
     margin: 1%;
   }
 }
+
+/* ----------------------------- Funding Articles Tablet MEdia Queries ------- */
 
 @media screen and (max-width: 1000px) {
 
