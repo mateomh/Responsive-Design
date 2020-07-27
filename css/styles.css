@@ -94,10 +94,11 @@ a {
   left: 0;
   z-index: 99;
   width: 100%;
-  height: 60px;
+  height: 48px;
   padding: 0;
   background: white;
   box-shadow: 3px 3px 5px gray;
+  justify-content: space-between;
 }
 
 #fixed-nav nav ul li {
@@ -138,10 +139,6 @@ a {
   margin: 5% 2% 20% 2%;
 }
 
-#logo img {
-  margin: 0.5% auto;
-}
-
 .other-articles a {
   color: black;
 }
@@ -176,18 +173,21 @@ a {
   font-size: 1.5em;
 }
 
-#fixed-nav figure {
-  position: absolute;
-  right: 5px;
+.figure-container {
   width: fit-content;
-  height: 100%;
-  margin: 2% 0;
+  height: 48px;
+}
+
+#fixed-nav figure {
+  width: 50px;
+  height: 48px;
+  border: 1px solid lightgrey;
+  padding: 10%;
 }
 
 figure i {
-  margin: 0 5px;
+  margin: 25%;
   height: 100%;
-  border: 1px solid lightgray;
 }
 
 /* -----------------------------Header Media Queries ----------------------- */
@@ -199,10 +199,6 @@ figure i {
   }
 
   #logo {
-    display: block;
-    width: 106px;
-    height: 100%;
-    background: linear-gradient(45deg, red, purple);
     padding: 3% 2%;
   }
 
@@ -228,6 +224,23 @@ figure i {
     display: block;
     color: orangered;
   }
+
+  figure i {
+    margin: 30%;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  #logo {
+    display: block;
+    width: 106px;
+    height: 100%;
+    background: linear-gradient(45deg, red, purple);
+    padding: 2%;
+  }
+
 }
 
 /* ------------------------- Main Articles ------------------------- */
@@ -297,7 +310,7 @@ figure i {
   padding: 30% 2% 0 2%;
 }
 
-/* ----------------- Main Articles Media Queries ------------------ */
+/* ----------------- Main Articles Mobile Media Query ------------------ */
 @media screen and (max-width: 700px) {
   #main-articles {
     grid-template-areas:
@@ -323,6 +336,17 @@ figure i {
   .small-art-1 {
     padding: 15% 2% 0 2%;
   }
+}
+
+/* ------------------ Main Aricles Tablet Media Query ---------------- */
+
+@media screen and (max-width: 1000px) {
+  
+  #main-articles {
+    height: 250px;
+    gap: 5px;
+  }
+
 }
 
 /* ------------------------- Latest News --------------------------- */
@@ -450,15 +474,11 @@ figure i {
   font-size: 1em;
 }
 
-/* ------------------------ Funding articles Media Queries -------- */
-@media screen and (max-width: 900px) {
+/* -------------------- Funding articles Mobile Media Queries -------- */
+@media screen and (max-width: 700px) {
   #funding-container {
     width: 95%;
     margin: 3% auto;
-  }
-
-  .funding-header {
-    display: block;
   }
 
   .funding-header h1 {
@@ -467,13 +487,12 @@ figure i {
 
   .funding-header nav {
     width: 100%;
-    margin: 4% 0 4% 0;
     padding: 0 0 0 5%;
   }
 
   .funding-header nav ul li {
     display: block;
-    padding: 2% 0 0 0;
+    padding: 1% 0 0 0;
   }
 
   .funding-body {
@@ -498,6 +517,18 @@ figure i {
   .funding-article img {
     margin: 1%;
   }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .funding-header {
+    display: block;
+  }
+
+  .funding-header nav {
+    margin: 4% 0 4% 0;
+  }
+
 }
 
 /* ------------------------ Article Categories --------------------- */
@@ -608,7 +639,7 @@ figure i {
 
 /* ------------------------- Article Categories Media Queries ------------------------- */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 700px) {
   #article-categories {
     width: 95%;
   }
@@ -665,10 +696,10 @@ figure i {
   color: white;
   background: navy;
   border-radius: 100%;
-  padding: 0.5% 0 0 0.7%;
+  padding: 0.5% 0 0 0.8%;
 }
 
-/* ----------------------------Footer Media Queries -------------------------- */
+/* ----------------------------Footer Mobile Media Queries -------------------------- */
 
 @media screen and (max-width: 700px) {
   footer {
@@ -685,12 +716,31 @@ figure i {
   }
 }
 
-/* ------------------------- Handy-btn Media Queries ------------------------- */
-@media screen and (max-width: 900px) {
+/* ---------------------------- Footer Tablet Media Queries ------------------------ */
+
+@media screen and (max-width: 1000px) {
+  .icons div {
+    padding-top: 1%;
+    margin: 0 0 0 1%;
+  }
+}
+
+/* ------------------------- Handy-btn Mobile Media Queries ------------------------- */
+@media screen and (max-width: 700px) {
   .handy-btn {
-    border-radius: 0%;
     padding: 1.5% 0 0 2%;
+  }
+}
+
+/* -------------------------- Handy-btn Tablet Media Queries ------------------------ */
+
+@media screen and (max-width: 1000px) {
+
+  .handy-btn {
+    border-radius: 0.5%;
+    padding: 1% 0 0 1.3%;
     bottom: 5px;
     right: 5px;
   }
+
 }
