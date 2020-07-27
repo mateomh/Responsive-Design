@@ -228,11 +228,9 @@ figure i {
   figure i {
     margin: 30%;
   }
-
 }
 
 @media screen and (max-width: 1000px) {
-
   #logo {
     display: block;
     width: 106px;
@@ -240,7 +238,6 @@ figure i {
     background: linear-gradient(45deg, red, purple);
     padding: 2%;
   }
-
 }
 
 /* ------------------------- Main Articles ------------------------- */
@@ -332,21 +329,22 @@ figure i {
     display: none;
   }
 
-  .small-art-2,
   .small-art-1 {
     padding: 15% 2% 0 2%;
+  }
+
+  .small-art-2 {
+    padding: 15% 2% 2% 2%;
   }
 }
 
 /* ------------------ Main Aricles Tablet Media Query ---------------- */
 
-@media screen and (max-width: 1000px) {
-  
+@media screen and (max-width: 1000px) and (min-width: 701px) {
   #main-articles {
     height: 250px;
     gap: 5px;
   }
-
 }
 
 /* ------------------------- Latest News --------------------------- */
@@ -358,7 +356,7 @@ figure i {
 .section-title {
   display: inline-block;
   width: 75%;
-  margin: 0 12.5%;
+  margin: 5% 12.5% 0 12.5%;
   color: orangered;
 }
 
@@ -366,7 +364,7 @@ figure i {
   display: grid;
   width: 75%;
   margin: 0 auto;
-  grid-template-columns: repeat(auto-fill, 250px);
+  grid-template-columns: repeat(auto-fill, 23%);
   grid-gap: 10px;
   justify-content: space-between;
 }
@@ -397,8 +395,12 @@ figure i {
 
 /* --------------- Latest News Mobile Media Queries ----------------- */
 @media only screen and (max-width: 700px) {
+  #latest-news {
+    margin-top: 10%;
+  }
+
   .section-title {
-    margin-left: 5%;
+    margin: 0 0 0 5%;
   }
 
   .grid-container {
@@ -422,6 +424,13 @@ figure i {
   .article-container p {
     font-size: 1.4em;
     padding: 2% 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fill, 30%);
+    width: 75%;
   }
 }
 
@@ -521,8 +530,7 @@ figure i {
 
 /* ----------------------------- Funding Articles Tablet MEdia Queries ------- */
 
-@media screen and (max-width: 1000px) {
-
+@media screen and (max-width: 1000px) and (min-width: 701px) {
   .funding-header {
     display: block;
   }
@@ -530,7 +538,6 @@ figure i {
   .funding-header nav {
     margin: 4% 0 4% 0;
   }
-
 }
 
 /* ------------------------ Article Categories --------------------- */
@@ -656,6 +663,25 @@ figure i {
   }
 }
 
+@media screen and (max-width: 1000px) and (min-width: 701px) {
+  .category-container {
+    width: 48%;
+  }
+
+  .img-header {
+    padding: 25% 2% 0 3%;
+  }
+
+  .img-header h3 {
+    padding: 0;
+  }
+}
+
+/* ------------------------ Latest Deals ------------------ */
+#latest-deals {
+  margin-bottom: 20%;
+}
+
 /* ------------------------- Footer -------------------------------- */
 
 .footer-links {
@@ -709,7 +735,7 @@ figure i {
   }
 
   .icons div {
-    padding-top: 2.5%;
+    padding-top: 1.5%;
     margin: 0 0 0 1%;
   }
 
@@ -720,7 +746,7 @@ figure i {
 
 /* ---------------------------- Footer Tablet Media Queries ------------------------ */
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 701px) {
   .icons div {
     padding-top: 1%;
     margin: 0 0 0 1%;
@@ -737,12 +763,10 @@ figure i {
 /* -------------------------- Handy-btn Tablet Media Queries ------------------------ */
 
 @media screen and (max-width: 1000px) {
-
   .handy-btn {
     border-radius: 0.5%;
     padding: 1% 0 0 1.3%;
     bottom: 5px;
     right: 5px;
   }
-
 }
